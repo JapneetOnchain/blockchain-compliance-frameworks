@@ -102,7 +102,7 @@ This scorecard isn't just theory — it's a practical tool I built to help VASPs
 
 ## References & Technical Summary
 
-This scorecard is my own synthesis — not copied from any single source — but built from cross-referencing public blockchain data, regulatory documents, and industry reports as of early 2026. Here's how I approached the scoring and what informed each column:
+I put this scorecard together myself after spending a few months reading VARA docs and chain analytics — it's not from any one article, but my way of connecting the dots
 
 - **Data Sources & Methodology**  
   - Scalability: Effective TPS and fee data from Solana Beach, and Dune Analytics dashboards (e.g., Solana peak ~65k TPS in bursts, Ethereum L2s aggregated ~100k+ TPS via rollups). Adjusted for real-world sustained performance, not just theoretical claims.
@@ -120,7 +120,7 @@ This scorecard is my own synthesis — not copied from any single source — but
   - Validator concentration (e.g., Solana or BNB) raises single-point-of-failure risk for sanctions screening and could trigger VARA governance flags under operational resilience rules.  
   - ZK tech enables "prove knowledge without revealing" patterns → potential bridge between privacy and compliance (e.g., prove non-sanctioned status via zero-knowledge proofs without exposing full tx graph).
 
-Scores are directional estimates (Feb 2026 snapshot) — in practice, I'd integrate live feeds (e.g., Chainalysis API, Dune queries) and update quarterly based on VARA circulars or new protocol upgrades.
+Scores are directional estimates — in practice, I'd integrate live feeds (e.g., Chainalysis API, Dune queries) and update quarterly based on VARA circulars or new protocol upgrades.
 
 
 Sources summary:
