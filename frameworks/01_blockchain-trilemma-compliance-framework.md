@@ -100,11 +100,35 @@ This scorecard isn't just theory — it's a practical tool I built to help VASPs
 - Spot AML blind spots early (e.g., why Solana's speed might create monitoring gaps under VARA's transaction rules)  
 - Prepare stronger responses for VARA supervision, incident reporting, or licensing renewals  
 
-Personal note: I created this after digging into recent VARA enforcement trends — it really hit me how much the classic trilemma directly feeds into real compliance headaches for licensed firms here.
+## References & Technical Summary
 
-## Next / Related
+This scorecard is my own synthesis — not copied from any single source — but built from cross-referencing public blockchain data, regulatory documents, and industry reports as of early 2026. Here's how I approached the scoring and what informed each column:
 
-- Coming soon: 02. Smart Contracts – Immutable Code & Compliance Lifecycle Risks  
-- [Back to Repo Home](../README.md)
+- **Data Sources & Methodology**  
+  - Scalability: Effective TPS and fee data from Solana Beach, and Dune Analytics dashboards (e.g., Solana peak ~65k TPS in bursts, Ethereum L2s aggregated ~100k+ TPS via rollups). Adjusted for real-world sustained performance, not just theoretical claims.
+  - Decentralization: Nakamoto coefficient and validator/node Gini from sources like Lido reports, EigenLayer data, and Solana validator stats (e.g., Solana's Nakamoto coeff ~19–25 → medium centralization risk).
+  - Security: Historical exploit/outage data from Rekt.news, DefiLlama hacks list, and Chainalysis 2025 Crypto Crime Report. Economic security via staked value and slashing mechanisms (Ethereum PoS ~$100B+ staked → high).
+  - Traceability: On-chain visibility estimates from Chainalysis Reactor and Elliptic tooling reports; calldata compression impact from EIP-4844 (proto-danksharding) analyses. ZK-rollups score higher due to potential for selective disclosure (zk-SNARK/STARK proofs).
+  - VARA Compliance Fit: Weighted average with heavy emphasis on traceability + decentralization/sanctions exposure, based on:
+    - VARA Rulebook v2.0 (May 2025) – governance, operational resilience, transaction monitoring
+    - VARA Circular Jan 2026 – enhanced due diligence for high-risk jurisdictions (FATF grey/black lists)
+    - FATF Recommendation 16 (Travel Rule) & upcoming CARF reporting obligations (2027 full rollout)
+
+- **Why this matters technically for compliance**  
+  The trilemma isn't just academic — it directly affects AML/CFT program effectiveness. For example:  
+  - High scalability via data compression (Optimistic/ZK rollups) reduces on-chain calldata → lowers signal-to-noise ratio for clustering heuristics and address linking → increases false negatives in transaction monitoring.  
+  - Validator concentration (e.g., Solana or BNB) raises single-point-of-failure risk for sanctions screening and could trigger VARA governance flags under operational resilience rules.  
+  - ZK tech enables "prove knowledge without revealing" patterns → potential bridge between privacy and compliance (e.g., prove non-sanctioned status via zero-knowledge proofs without exposing full tx graph).
+
+Scores are directional estimates (Feb 2026 snapshot) — in practice, I'd integrate live feeds (e.g., Chainalysis API, Dune queries) and update quarterly based on VARA circulars or new protocol upgrades.
+
+
+Sources summary:
+- VARA official site & Rulebook: vara.ae
+- Chainalysis 2025 Crypto Crime Report
+- L2Beat.com & DefiLlama
+- FATF Guidance for Virtual Assets (updated 2021–2025)
+- Various Dune Analytics queries & Messari protocol reports
+
 
 Open to feedback, questions, or forks! If you're in Dubai crypto compliance, I'd love to chat about how this applies in practice.
